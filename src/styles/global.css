@@ -1,10 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta&family=Sora:wght@400;600&display=swap");
+
 * {
   box-sizing: border-box;
 }
 
 :root {
-  --type-first: Helvetica, Arial, sans-serif
-  --type-second: 'Spectral', Georgia
+  --type-first: "Sora", sans-serif;
+  --type-second: "Spectral", Georgia;
+  --type-alternative: "Mukta", sans-serif;
 }
 
 .container {
@@ -20,7 +23,24 @@ body {
   padding-top: 4rem;
 }
 
-h1, h2, h3, h4, p {
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--type-first);
+}
+
+p,
+span,
+label {
+  font-family: var(--type-alternative);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
   margin: 0;
 }
 
@@ -35,10 +55,12 @@ img {
   max-width: 100%;
 }
 
-button, input {
+button,
+input {
   display: block;
   font-size: 1rem;
-  font-family: var(--type-first);
+  font-family: var(--type-alternative);
+  font-weight: 400;
   color: #333;
 }
 
