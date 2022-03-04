@@ -6,9 +6,7 @@ export function tokenPost(body) {
     options: {
       method: "POST",
       headers: {
-        headers: {
-          "Content-Type": "application/json",
-        },
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(body),
     },
@@ -17,13 +15,11 @@ export function tokenPost(body) {
 
 export function userGet(token) {
   return {
-    url: api + "/api/get",
+    url: api + "/api/user",
     options: {
       method: "GET",
       headers: {
-        headers: {
-          Authorization: "Bearer " + token,
-        },
+        Authorization: "Bearer " + token,
       },
     },
   };
