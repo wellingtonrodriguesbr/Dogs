@@ -21,8 +21,10 @@ export default function UserContextProvider({ children }) {
     try {
       const { url, options } = tokenPost({ username, password });
       const tokenResponse = await fetch(url, options);
-      const { token } = tokenResponse.json();
+      const { token } = await tokenResponse.json();
+
       window.localStorage.setItem("token", token);
+
       await getUser(token);
     } catch (error) {
       setLogin(false);
