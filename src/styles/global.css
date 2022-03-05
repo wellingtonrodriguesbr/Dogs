@@ -6,8 +6,7 @@
 
 :root {
   --type-first: "Sora", sans-serif;
-  --type-second: "Spectral", Georgia;
-  --type-alternative: "Mukta", sans-serif;
+  --type-second: "Mukta", sans-serif;
 }
 
 .container {
@@ -33,7 +32,7 @@ h4 {
 p,
 span,
 label {
-  font-family: var(--type-alternative);
+  font-family: var(--type-second);
 }
 
 h1,
@@ -59,11 +58,45 @@ button,
 input {
   display: block;
   font-size: 1rem;
-  font-family: var(--type-alternative);
+  font-family: var(--type-second);
   font-weight: 400;
   color: #333;
 }
 
 a {
   text-decoration: none;
+  color: #333;
+}
+
+.title {
+  line-height: 1;
+  font-size: 3rem;
+  margin: 1rem 0;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #fb1;
+  position: absolute;
+  bottom: 0px;
+  left: -5px;
+  border-radius: 0.2rem;
+  z-index: -1;
+}
+
+.animatedEntry {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: animated 0.5s forwards;
+}
+
+@keyframes animated {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
