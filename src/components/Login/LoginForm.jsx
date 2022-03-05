@@ -8,7 +8,7 @@ import Button from "../Forms/Button/Button";
 import Input from "../Forms/Input/Input";
 
 export default function LoginForm() {
-  const { userLogin } = useContext(UserContext);
+  const { userLogin, error, loading } = useContext(UserContext);
   const username = useForm();
   const password = useForm();
 
@@ -26,7 +26,13 @@ export default function LoginForm() {
       <form action="" onSubmit={handleSubmit}>
         <Input label="Usúario" type="text" name="username" {...username} />
         <Input label="Senha" type="password" name="password" {...password} />
-        <Button>Fazer login</Button>
+        {loading ? (
+          <Button disabled>Carregando...</Button>
+        ) : (
+          <Button>Fazer login</Button>
+        )}
+
+        {error && <p>{error}</p>}
       </form>
       <Link to="/login/create">Cadastro</Link>
     </section>
