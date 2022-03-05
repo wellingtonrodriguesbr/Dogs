@@ -21,7 +21,6 @@ export function tokenValidate(token) {
       headers: {
         Authorization: "Bearer " + token,
       },
-      body: JSON.stringify(token),
     },
   };
 }
@@ -34,6 +33,19 @@ export function userGet(token) {
       headers: {
         Authorization: "Bearer " + token,
       },
+    },
+  };
+}
+
+export function userCreate(body) {
+  return {
+    url: API_URL + "/api/user",
+    options: {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(body),
     },
   };
 }
