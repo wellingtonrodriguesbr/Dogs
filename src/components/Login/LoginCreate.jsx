@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import { UserContext } from "../../contexts/UserContext";
 import useFetch from "../../hooks/useFetch";
 import useForm from "../../hooks/useForm";
@@ -28,6 +29,7 @@ export default function LoginCreate() {
 
   return (
     <section className="animatedEntry">
+      <Link to="/login">← Voltar</Link>
       <h1 className="title">Cadastre-se</h1>
       <form onSubmit={createUser}>
         <Input label="Usúario" type="text" name="username" {...username} />
