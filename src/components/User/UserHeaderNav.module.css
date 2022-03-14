@@ -94,6 +94,12 @@
   pointer-events: none;
 }
 
+@media (max-width: 50rem) {
+  .navMobile {
+    top: 120px;
+  }
+}
+
 .navMobile a,
 .navMobile button {
   width: 100%;
