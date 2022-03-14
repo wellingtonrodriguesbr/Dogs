@@ -18,8 +18,9 @@
 .containerPreview {
   width: 100%;
   height: 98%;
-  border: dashed 2px #ccc9;
+  border: dashed 1px #ccc9;
   border-radius: 1rem;
+  background-color: #eee;
 }
 
 .preview {
