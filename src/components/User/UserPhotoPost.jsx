@@ -60,7 +60,7 @@ export default function UserPhotoPost() {
         )}
         <Error error={error} />
       </form>
-      <div>
+      <div className={styles.containerPreview}>
         {img.preview && (
           <div
             className={styles.preview}
