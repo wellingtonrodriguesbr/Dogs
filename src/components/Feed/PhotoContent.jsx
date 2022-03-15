@@ -11,8 +11,8 @@ export default function PhotoContent({ data }) {
       </div>
       <div className={styles.detailsPhoto}>
         <div>
-          <p>
-            <Link to={`/profile/${photo.autor}`}>@{photo.autor}</Link>
+          <p className={styles.author}>
+            <Link to={`/profile/${photo.author}`}>@{photo.author}</Link>
             <span className={styles.views}>{photo.acessos}</span>
           </p>
           <h1 className="title">
