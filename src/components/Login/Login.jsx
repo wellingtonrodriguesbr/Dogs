@@ -1,12 +1,11 @@
-import React, { useContext } from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { useContext } from "react";
+import { Navigate, Route, Routes } from "react-router-dom";
 import { UserContext } from "../../contexts/UserContext";
+import styles from "../../styles/Login.module.css";
 import LoginCreate from "./LoginCreate";
 import LoginForm from "./LoginForm";
 import LoginPasswordLost from "./LoginPasswordLost";
 import LoginPasswordReset from "./LoginPasswordReset";
-
-import styles from "../../styles/Login.module.css";
 
 export default function Login() {
   const { login } = useContext(UserContext);

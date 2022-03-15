@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import styles from "./UserHeader.module.css";
 import UserHeaderNav from "./UserHeaderNav";

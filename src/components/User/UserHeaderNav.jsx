@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { ReactComponent as NewPost } from "../../Assets/adicionar.svg";
 import { ReactComponent as Statistics } from "../../Assets/estatisticas.svg";
