@@ -1,3 +1,4 @@
+import Image from "../Helper/Image";
 import styles from "./FeedPhotosItem.module.css";
 
 export default function FeedPhotosItem({ photo, setPhotoModal }) {
@@ -7,12 +8,8 @@ export default function FeedPhotosItem({ photo, setPhotoModal }) {
 
   return (
     <li className={styles.photo} onClick={openModal}>
-      <img src={photo.src} alt={photo.title} />
-      <span>
-        {new Intl.NumberFormat("pt-BR", { maximumSignificantDigits: 3 }).format(
-          photo.acessos
-        )}
-      </span>
+      <Image src={photo.src} alt={photo.title} />
+      <span>{new Intl.NumberFormat("pt-BR").format(photo.acessos)}</span>
     </li>
   );
 }
