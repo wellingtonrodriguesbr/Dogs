@@ -35,7 +35,7 @@ export default function LoginForm() {
 
         <Error error={error} />
       </form>
-      <Link className={styles.forgot} to="/login/forgotPassword">
+      <Link className={styles.forgot} to="/login/forgot/password">
         Esqueceu sua senha?
       </Link>
       <div className={styles.register}>
