@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Photo from "./components/Feed/Photo";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import ProtectedRoute from "./components/Helper/ProtectedRoute";
@@ -25,6 +26,7 @@ export default function App() {
                 </ProtectedRoute>
               }
             />
+            <Route path="photo/:id" element={<Photo />} />
           </Routes>
           <Footer />
         </UserContextProvider>
