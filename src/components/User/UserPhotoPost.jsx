@@ -54,9 +54,9 @@ export default function UserPhotoPost() {
           onChange={handleImgChange}
         />
         {loading ? (
-          <Button disabled>Enviando ...</Button>
+          <Button disabled>Adicionando ...</Button>
         ) : (
-          <Button>Enviar</Button>
+          <Button>Adicionar</Button>
         )}
         <Error error={error} />
       </form>
