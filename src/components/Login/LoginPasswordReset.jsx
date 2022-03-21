@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
 import useForm from "../../hooks/useForm";
 import { resetPassword } from "../../services/api";
@@ -39,8 +39,9 @@ export default function LoginPasswordReset() {
   }
 
   return (
-    <div>
+    <section className="animatedEntry">
       <Head title="Nova senha" />
+      <Link to="/login">← Voltar</Link>
       <h1 className="title">Nova senha</h1>
       <form onSubmit={handleSubmit}>
         <Input
@@ -56,6 +57,6 @@ export default function LoginPasswordReset() {
         )}
       </form>
       <Error error={error} />
-    </div>
+    </section>
   );
 }

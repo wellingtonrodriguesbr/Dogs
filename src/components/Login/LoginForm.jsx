@@ -35,7 +35,7 @@ export default function LoginForm() {
           <Button>Fazer login</Button>
         )}
 
-        <Error error={error} />
+        <Error error={error && "Dados incorretos"} />
       </form>
       <Link className={styles.forgot} to="/login/password/lost">
         Esqueceu sua senha?

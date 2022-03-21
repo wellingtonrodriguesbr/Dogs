@@ -11,7 +11,7 @@ export default function FeedPhotos({ setPhotoModal, user, page, setInfinite }) {
 
   useEffect(() => {
     async function fetchPhotos() {
-      const total = 3;
+      const total = 6;
       const { url, options } = photosGet({ page, total, user });
       const { response, json } = await request(url, options);
 
