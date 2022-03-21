@@ -7,6 +7,7 @@ import { userCreate } from "../../services/api";
 import Button from "../Forms/Button/Button";
 import Input from "../Forms/Input/Input";
 import Error from "../Helper/Error";
+import Head from "../Helper/Head";
 
 export default function LoginCreate() {
   const { userLogin } = useContext(UserContext);
@@ -29,6 +30,7 @@ export default function LoginCreate() {
 
   return (
     <section className="animatedEntry">
+      <Head title="Cadastro" />
       <Link to="/login">← Voltar</Link>
       <h1 className="title">Cadastre-se</h1>
       <form onSubmit={createUser}>

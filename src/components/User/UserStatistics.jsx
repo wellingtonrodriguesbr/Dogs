@@ -1,3 +1,10 @@
+import Head from "../Helper/Head";
+
 export default function UserStatistics() {
-  return <div>UserStatistics</div>;
+  return (
+    <div>
+      <Head title="Estatísticas" />
+      UserStatistics
+    </div>
+  );
 }

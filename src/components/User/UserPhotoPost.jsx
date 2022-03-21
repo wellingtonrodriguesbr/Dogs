@@ -6,6 +6,7 @@ import { photoPost } from "../../services/api";
 import Button from "../Forms/Button/Button";
 import Input from "../Forms/Input/Input";
 import Error from "../Helper/Error";
+import Head from "../Helper/Head";
 import styles from "./UserPhoto.module.css";
 
 export default function UserPhotoPost() {
@@ -42,6 +43,7 @@ export default function UserPhotoPost() {
 
   return (
     <section className={`${styles.photoPost} animatedEntry`}>
+      <Head title="Nova foto" />
       <form onSubmit={handleSubmit}>
         <Input label="Nome" type="text" name="nome" {...name} />
         <Input label="Peso" type="number" name="peso" {...weight} />
