@@ -9,7 +9,7 @@ export default function UserHeader() {
 
   useEffect(() => {
     if (location.pathname === "/account") {
-      setTitle("Feed");
+      setTitle("Meu Feed");
     } else if (location.pathname === "/account/statistics") {
       setTitle("Estatísticas");
     } else if (location.pathname === "/account/new/post") {

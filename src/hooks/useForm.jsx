@@ -6,11 +6,6 @@ const validation = {
       /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
     message: "Preencha um e-mail válido",
   },
-  password: {
-    regex: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/,
-    message:
-      "A senha precisa conter 8 caracteres com pelo menos 1 letra maiúscula, 1 caracter especial (@, *, &, %) e um número.",
-  },
   number: {
     regex: /^\d+$/,
     message: "Utilize apenas números",
