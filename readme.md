@@ -23,7 +23,7 @@
 
 ```bash
 # Clonar o repositório
-$ git clone https://github.com/wellingtonrodriguesbr/Dogs
+$ git clone https://github.com/wellingtonrodriguesbr/Dogs.git
 
 # Entrar no diretório
 $ cd Dogs
