@@ -19,7 +19,6 @@
 - [JWT](https://jwt.io/)
 - [Victory](https://formidable.com/open-source/victory/)
 - [Css Modules](https://github.com/css-modules/css-modules)
-<br/>
 <hr />
 <h2>Como baixar o projeto</h2>
 
