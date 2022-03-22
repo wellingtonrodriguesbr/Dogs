@@ -20,7 +20,7 @@ export default function Feed({ user }) {
         wait = true;
         setTimeout(() => {
           wait = false;
-        }, 500);
+        }, 550);
       }
     }
   }
