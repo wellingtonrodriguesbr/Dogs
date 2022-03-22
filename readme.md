@@ -9,7 +9,7 @@
 
 # Sobre o projeto
 
-<p>Dogs é uma rede social para cachorros. Nele é possível entrar com um usúario já cadastrado, cadastrar novo usúario, recuperar uma senha, postar fotos e comentar. Foi usado o Wordpress como CMS, onde foi feito toda autenticação JWT e a criação dos endpoints customizados para esse projeto.</p>
+<p>Dogs é uma rede social para cachorros. Nela é possível entrar com um usúario já cadastrado, cadastrar novo usúario, recuperar senha, postar fotos e comentar. Foi usado o Wordpress como CMS, onde foi feito toda autenticação JWT e a criação dos endpoints customizados para esse projeto.</p>
 
 # Tecnologias
 
