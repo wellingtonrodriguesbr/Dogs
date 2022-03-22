@@ -6,21 +6,20 @@
   <img src="./src/Assets/capa.jpg">
 </h1>
 <h3 align="center">Você pode acessar o projeto <a href="https://dogs-social-network.vercel.app/" target="_blank">clicando aqui</a></h3>
-<hr/>
-<h2>
-  Sobre o projeto
-</h2>
+
+# Sobre o projeto
+
 <p>Dogs é uma rede social para cachorros. Nele é possível entrar com um usúario já cadastrado, cadastrar novo usúario, recuperar uma senha, postar fotos e comentar. Foi usado o Wordpress como CMS, onde foi feito toda autenticação JWT e a criação dos endpoints customizados para esse projeto.</p>
-<hr />
-<h2>Tecnologias</h2>
+
+# Tecnologias
 
 - [ReactJs](https://reactjs.org/)
 - [React Router DOM](https://reactrouter.com/)
 - [JWT](https://jwt.io/)
 - [Victory](https://formidable.com/open-source/victory/)
 - [Css Modules](https://github.com/css-modules/css-modules)
-<hr />
-<h2>Como baixar o projeto</h2>
+
+## Como baixar o projeto
 
 ```bash
 # Clonar o repositório
